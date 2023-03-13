@@ -7,6 +7,11 @@ async function executar() {
     divImagem.src = iPersonagem;
     const divNome = document.getElementById("nomePersonagem");
     divNome.innerHTML = `${nPersonagem}`;
+    limpar();
+}
+
+function limpar() {
+    document.getElementById("idPersonagem").value = "";
 }
 
 async function buscarPersonagemDaAPI(id) {
